@@ -1,10 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
+// app.module.ts
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalculatorComponent } from './calculator/calculator.component';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,8 +13,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule // Correctly added FormsModule here
+    FormsModule, // Add FormsModule here
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
